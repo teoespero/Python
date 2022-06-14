@@ -58,5 +58,22 @@ for theircar in top_diecast_car_brands:
 print('total cars: ', len(top_diecast_car_brands))
 print('--------------------------------------------------------------------------------------------')
 
+# copy the brands they have to our list
+print('copy the brands they have to our list')
+for theircar in top_diecast_car_brands:
+    if (theircar not in my_diecast_cars):
+        print('\tadding ', theircar)
+        my_diecast_cars.append(theircar)
+print('--------------------------------------------------------------------------------------------')
+
+
+# show our list
+print('show our new list')
+for mycars in my_diecast_cars:
+    print('\t',mycars)
+print('total cars: ', len(my_diecast_cars))
+print('--------------------------------------------------------------------------------------------')
+
+
 
 
